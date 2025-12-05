@@ -3,7 +3,7 @@ from tabulate import tabulate
 from .base import Report
 
 
-class AvgPerformanceReport(Report):
+class PerformanceReport(Report):
     """Отчёт по среднему performance по position."""
 
     def load_data(self):
@@ -31,4 +31,4 @@ class AvgPerformanceReport(Report):
         # сортировка по убыванию performance
         result.sort(key=lambda x: x[1], reverse=True)
 
-        print(tabulate(result, headers=["position", "avg_performance"], floatfmt=".2f"))
+        print(tabulate(result, headers=["position", "performance"], floatfmt=".2f"))

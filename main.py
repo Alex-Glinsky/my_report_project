@@ -1,9 +1,9 @@
 import argparse
-from reports.avg_performance import AvgPerformanceReport
+from reports.performance import PerformanceReport
 
 
 REPORTS = {
-    "avg_performance": AvgPerformanceReport,
+    "performance": PerformanceReport,
 }
 
 
